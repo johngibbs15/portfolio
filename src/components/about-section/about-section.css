@@ -1,0 +1,26 @@
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .quote-container {
+    width: 40%;
+    padding: 40px;
+  }
+  
+  .about-container {
+    width: 30%;
+    padding: 80px 0;
+  }
+  
+  .quote {
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  .quote-container p {
+    float: right;
+  }
+  

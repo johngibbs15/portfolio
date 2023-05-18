@@ -1,0 +1,65 @@
+.work-section {
+    background-color: rgb(59, 62, 77);
+    padding: 80px 50px;
+  }
+  
+  .work-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .work-card {
+    width: 30%;
+    height:215px;
+    background-color: rgb(29, 31, 38);
+    margin: 10px;
+    padding: 0 50px 50px 50px;
+    position: relative;
+
+  }
+
+  .work-card div{
+    position: absolute;
+    bottom:0;
+    left:0;
+    margin: 0 0 10px 50px;
+
+  }
+
+  .work-card div a{
+    display: block;
+    margin-bottom: 10px;
+    color:#fff;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .work-card {
+      width: 100%;
+      height:325px;
+    }
+    .bounce {
+      padding: 50px 0 0 0;
+    }
+  }
+  
+  .html {
+    border-top: solid 8px rgb(242, 128, 87);
+  }
+  
+  .html {
+    border-top: solid 8px rgb(242, 128, 87);
+  }
+  
+  .css {
+    border-top: solid 8px rgb(88, 130, 203);
+  }
+  
+  .js {
+    border-top: solid 8px rgb(3, 114, 114);
+  }
+  
+  .react {
+    border-top: solid 8px rgb(239, 255, 66);
+  }
+  
