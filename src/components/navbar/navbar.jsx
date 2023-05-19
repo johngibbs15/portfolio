@@ -1,3 +1,6 @@
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+
 import HTML from '../../assets/HTML5.png';
 import CSS from '../../assets/CSS.png';
 import JS from '../../assets/JScript.png';
@@ -5,22 +8,29 @@ import REACT from '../../assets/REACTJS.png';
 
 import './navbar.css';
 
-import { Link } from 'react-router-dom';
-
 function Navbar() {
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+    function toggleDropdown() {
+        setIsDropdownOpen(!isDropdownOpen);
+    }
+
     function scrollToSection(sectionId) {
         document.getElementById(sectionId).scrollIntoView({
             behavior: 'smooth',
         });
     }
+
     return (
         <nav>
             <div className="nav-container">
                 <div className="menu-container">
-                    <button className="hamburger">☰</button>
-                    <Link style={{ textDecoration: 'none' }} to="/portfolio">
-                        <h3>JOHN GIBBS</h3>
-                    </Link>
+                    <button className="hamburger" onClick={toggleDropdown}>
+                        ☰
+                    </button>
+
+                    <h3>JOHN GIBBS</h3>
+
                     <div className="nav-links">
                         <Link
                             to=""
@@ -44,14 +54,22 @@ function Navbar() {
                     <img src={REACT} alt="React logo" />
                 </div>
             </div>
-            <div className="hamburger-list-container hidden">
-                <Link to="" className="nav-link">
+            <div
+                className={`hamburger-list-container ${
+                    isDropdownOpen ? '' : 'hidden'
+                }`}
+            >
+                <Link to="" className="nav-link" onClick={toggleDropdown}>
                     Work
                 </Link>
-                <Link to="/about" className="nav-link">
+                <Link to="/about" className="nav-link" onClick={toggleDropdown}>
                     About
                 </Link>
-                <Link to="/contact" className="nav-link">
+                <Link
+                    to="/contact"
+                    className="nav-link"
+                    onClick={toggleDropdown}
+                >
                     Contact
                 </Link>
             </div>

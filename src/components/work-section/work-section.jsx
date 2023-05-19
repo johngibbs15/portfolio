@@ -4,7 +4,7 @@ function Work() {
         <div>
             <section class="work-section" id="work">
                 <div class="work-card-container">
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>HTML, CSS, REACT</h6>
                         <h3>Portfolio Website</h3>
                         <p>The website you are on!</p>
@@ -18,7 +18,7 @@ function Work() {
                         </div>
                     </div>
 
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>
                             React Native, Gifted Chat, Firebase, and Firestore
                         </h6>
@@ -38,7 +38,7 @@ function Work() {
                         </div>
                     </div>
 
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>
                             HTML, CSS, SASS, JS, ANGULAR, MONGODB, NODEJS,
                             EXPRESS
@@ -60,7 +60,7 @@ function Work() {
                         </div>
                     </div>
 
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>
                             HTML, CSS, SASS, Bootsrap, JS, REACT, MONGODB,
                             NODEJS, EXPRESS,
@@ -85,7 +85,7 @@ function Work() {
                         </div>
                     </div>
 
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>HTML, CSS, REACT, JEST, GOOGLE API, AWS CLOUD</h6>
 
                         <h3>Meet Website</h3>
@@ -105,7 +105,7 @@ function Work() {
                             </a>
                         </div>
                     </div>
-                    <div class="work-card js">
+                    <div className="work-card js">
                         <h6>HTML, CSS, JS</h6>
 
                         <h3>Pokedex</h3>

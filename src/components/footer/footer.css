@@ -9,3 +9,9 @@ footer {
     text-decoration: none;
     color: rgb(255, 255, 255);
   }
+
+  @media (max-width: 600px) {
+    footer a {
+      text-align: center;
+    }
+  }
