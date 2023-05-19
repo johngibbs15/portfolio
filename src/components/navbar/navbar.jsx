@@ -18,7 +18,7 @@ function Navbar() {
             <div className="nav-container">
                 <div className="menu-container">
                     <button className="hamburger">☰</button>
-                    <Link to="/">
+                    <Link style={{ textDecoration: 'none' }} to="/">
                         <h3>JOHN GIBBS</h3>
                     </Link>
                     <div className="nav-links">
