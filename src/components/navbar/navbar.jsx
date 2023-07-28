@@ -15,12 +15,6 @@ function Navbar() {
         setIsDropdownOpen(!isDropdownOpen);
     }
 
-    function scrollToSection(sectionId) {
-        document.getElementById(sectionId).scrollIntoView({
-            behavior: 'smooth',
-        });
-    }
-
     return (
         <nav>
             <div className="nav-container">
@@ -32,17 +26,11 @@ function Navbar() {
                     <h3>JOHN GIBBS</h3>
 
                     <div className="nav-links">
-                        <Link
-                            to=""
-                            className="nav-link"
-                            onClick={() => scrollToSection('work')}
-                        >
+                        {/* Navigation links as <Link> elements on desktop */}
+                        <Link to="#work" className="nav-link">
                             Work
                         </Link>
-                        <Link
-                            className="nav-link"
-                            onClick={() => scrollToSection('footer')}
-                        >
+                        <Link to="#footer" className="nav-link">
                             Contact
                         </Link>
                     </div>
@@ -59,19 +47,20 @@ function Navbar() {
                     isDropdownOpen ? '' : 'hidden'
                 }`}
             >
-                <Link to="" className="nav-link" onClick={toggleDropdown}>
+                <a
+                    href="#work"
+                    className="nav-link mobile-link"
+                    onClick={toggleDropdown}
+                >
                     Work
-                </Link>
-                <Link to="/about" className="nav-link" onClick={toggleDropdown}>
-                    About
-                </Link>
-                <Link
-                    to="/contact"
-                    className="nav-link"
+                </a>
+                <a
+                    href="#footer"
+                    className="nav-link mobile-link"
                     onClick={toggleDropdown}
                 >
                     Contact
-                </Link>
+                </a>
             </div>
         </nav>
     );
