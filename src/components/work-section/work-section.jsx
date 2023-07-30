@@ -5,19 +5,34 @@ function Work() {
             <section class="work-section" id="work">
                 <div class="work-card-container">
                     <div className="work-card js">
-                        <h6>HTML, CSS, REACT</h6>
-                        <h3>Portfolio Website</h3>
-                        <p>The website you are on!</p>
+                        <h6>React, SQL, Angular, Vue, Astro, NodeJS Stripe</h6>
+                        <h3>CleanVid</h3>
+                        <h5>Collaborative Project</h5>
+                        <p>
+                            A chrome extension that brings you the world's first
+                            fully automated service for ad skipping, scene
+                            filtering, and seamless integration across multiple
+                            platforms for video and music streaming services.
+                        </p>
                         <div>
-                            <a href="https://github.com/johngibbs15/react-portfolio">
+                            <a href="https://cleanvid.com/">Website</a>
+                        </div>
+                    </div>
+                    <div className="work-card js">
+                        <h6>NextJS, MongoDB, SASS, NodeJS, Stripe</h6>
+                        <h3>Just By Emma</h3>
+                        <h5>Collaborative Project</h5>
+                        <p>
+                            A skincare e-commerce website. I primarily work on
+                            implementing on implemeting UI comooenets for this
+                            website using best responsive design practices{' '}
+                        </p>
+                        <div>
+                            <a href="https://github.com/Eloi-Perez/just-by-emma">
                                 GitHub
-                            </a>
-                            <a href="https://github.com/johngibbs15/react-portfolio">
-                                Website
                             </a>
                         </div>
                     </div>
-
                     <div className="work-card js">
                         <h6>
                             React Native, Gifted Chat, Firebase, and Firestore
@@ -37,7 +52,38 @@ function Work() {
                             </a>
                         </div>
                     </div>
+                    <div className="work-card js">
+                        <h6>HTML, CSS, REACT</h6>
+                        <h3>Portfolio Website</h3>
+                        <p>The website you are on!</p>
+                        <div>
+                            <a href="https://github.com/johngibbs15/react-portfolio">
+                                GitHub
+                            </a>
+                            <a href="https://github.com/johngibbs15/react-portfolio">
+                                Website
+                            </a>
+                        </div>
+                    </div>
+                    <div className="work-card js">
+                        <h6>
+                            React Native, Gifted Chat, Firebase, and Firestore
+                        </h6>
 
+                        <h3>Chat App</h3>
+
+                        <p>
+                            A chat app for mobile devices using React Native and
+                            Firebase. The app will provide users with a chat
+                            interface and options to share images and their
+                            location.
+                        </p>
+                        <div>
+                            <a href="https://github.com/johngibbs15/meet">
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                     <div className="work-card js">
                         <h6>
                             HTML, CSS, SASS, JS, ANGULAR, MONGODB, NODEJS,
@@ -59,7 +105,6 @@ function Work() {
                             </a>
                         </div>
                     </div>
-
                     <div className="work-card js">
                         <h6>
                             HTML, CSS, SASS, Bootsrap, JS, REACT, MONGODB,
@@ -84,7 +129,6 @@ function Work() {
                             </a>
                         </div>
                     </div>
-
                     <div className="work-card js">
                         <h6>HTML, CSS, REACT, JEST, GOOGLE API, AWS CLOUD</h6>
 
