@@ -15,6 +15,16 @@ function Navbar() {
         setIsDropdownOpen(!isDropdownOpen);
     }
 
+    function handleLinkClick() {
+        setIsDropdownOpen(false);
+    }
+
+    function scrollToSection(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: 'smooth',
+        });
+    }
+
     return (
         <nav>
             <div className="nav-container">
@@ -27,10 +37,24 @@ function Navbar() {
 
                     <div className="nav-links">
                         {/* Navigation links as <Link> elements on desktop */}
-                        <Link to="#work" className="nav-link">
+                        <Link
+                            to="#work"
+                            className="nav-link"
+                            onClick={() => {
+                                handleLinkClick();
+                                scrollToSection('work'); // Scroll to the 'work' section
+                            }}
+                        >
                             Work
                         </Link>
-                        <Link to="#footer" className="nav-link">
+                        <Link
+                            to="#footer"
+                            className="nav-link"
+                            onClick={() => {
+                                handleLinkClick();
+                                scrollToSection('footer'); // Scroll to the 'footer' section
+                            }}
+                        >
                             Contact
                         </Link>
                     </div>
@@ -47,20 +71,26 @@ function Navbar() {
                     isDropdownOpen ? '' : 'hidden'
                 }`}
             >
-                <a
-                    href="#work"
-                    className="nav-link mobile-link"
-                    onClick={toggleDropdown}
+                <Link
+                    to="#work"
+                    className="nav-link"
+                    onClick={() => {
+                        handleLinkClick();
+                        scrollToSection('work'); // Scroll to the 'work' section
+                    }}
                 >
                     Work
-                </a>
-                <a
-                    href="#footer"
-                    className="nav-link mobile-link"
-                    onClick={toggleDropdown}
+                </Link>
+                <Link
+                    to="#footer"
+                    className="nav-link"
+                    onClick={() => {
+                        handleLinkClick();
+                        scrollToSection('footer'); // Scroll to the 'footer' section
+                    }}
                 >
                     Contact
-                </a>
+                </Link>
             </div>
         </nav>
     );
