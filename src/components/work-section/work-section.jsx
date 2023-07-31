@@ -23,31 +23,12 @@ function Work() {
                         <h3>Just By Emma</h3>
                         <h5>Collaborative Project</h5>
                         <p>
-                            A skincare e-commerce website. I primarily work on
-                            implementing on implemeting UI comooenets for this
-                            website using best responsive design practices{' '}
+                            A skincare e-commerce website. I primarily worked on
+                            implemeting UI components for this website using
+                            best responsive web design practices.
                         </p>
                         <div>
                             <a href="https://github.com/Eloi-Perez/just-by-emma">
-                                GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div className="work-card js">
-                        <h6>
-                            React Native, Gifted Chat, Firebase, and Firestore
-                        </h6>
-
-                        <h3>Chat App</h3>
-
-                        <p>
-                            A chat app for mobile devices using React Native and
-                            Firebase. The app will provide users with a chat
-                            interface and options to share images and their
-                            location.
-                        </p>
-                        <div>
-                            <a href="https://github.com/johngibbs15/meet">
                                 GitHub
                             </a>
                         </div>
